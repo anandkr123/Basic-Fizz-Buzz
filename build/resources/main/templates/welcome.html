@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+<body><center>
+<h1>Basic Fizz-Buzz</h1>
+<form action="#" th:action="@{/}" th:object="${inputNum}" method="post" >
+    <table>
+    <tr>
+        <td><h1>Check Integer Validation !</h1></td>
+        <td><input type="text" th:field="*{num}" /></td>
+        <td th:if="${#fields.hasErrors('num')}" th:errors="*{num}">Number Error</td>
+    </tr>
+        <tr>
+            <td><center><button type="submit" align="center">Submit</button></center></td>
+        </tr>
+    </table>
+</form>
+</center>
+</body>
+</html>

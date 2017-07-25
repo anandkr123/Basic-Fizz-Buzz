@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:pages="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<tr>
+    <th> <h1><center>Results of the Integer</center></h1></th>
+</tr>
+<table  align="center" width="100">
+    <tbody >
+<tr th:each="li: ${data}" >
+
+    <div th:switch="${li}" >
+        <p th:case="'fizz'"><td style="color:blue;" th:text="${li}" /></p>
+        <p th:case="'wizz'"><td style="color:blue;" th:text="${li}" /></p>
+        <p th:case="'buzz'"><td style="color:green;" th:text="${li}" /></p>
+        <p th:case="'wuzz'"><td style="color:green;" th:text="${li}" /></p>
+        <p th:case="'fizz buzz'"><td><span style="color:blue">fizz</span> <span style="color:green">buzz</span></td></p>
+        <p th:case="'wizz wuzz'"><td><span style="color:blue">wizz</span> <span style="color:green">wuzz</span></td></p>
+           <p th:case="*"><td  th:text="${li}" /></p>
+
+    </div>
+
+</tr>
+</tbody>
+</table>
+</body>
+</html>
