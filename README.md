@@ -1,6 +1,6 @@
 # Basic-Fizz-Buzz
 
-Clone the project into your local machine using command -  git clone
+Clone the project into your local machine using command -  git clone https://github.com/anandkr123/Basic-Fizz-Buzz.git
 
 Prerequisites :- 
 
