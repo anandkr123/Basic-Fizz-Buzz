@@ -14,6 +14,7 @@ all recent version
  
  1) select File->New->Project from Existing sources-> open the cloned project directory
     IntelliJ will autmatically detect that it is a gradle project.
+    Set the gradleJVM to  "C:\Program Files (x86)\Java\jdk1.8.0_131"   OR wherever jdk 1.8 is installed in your system
  
  2) from the intelliJ terminal run command -> gradle build
  
